@@ -99,7 +99,7 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/munch
 TARGET_KERNEL_CONFIG := vendor/munch_defconfig
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := r574158
+TARGET_KERNEL_CLANG_VERSION := r547379
 KERNEL_CC := CC=$(shell pwd)/prebuilts/clang/host/linux-x86/clang-$(TARGET_KERNEL_CLANG_VERSION)/bin/clang
 KERNEL_LD := LD=ld.lld
 TARGET_KERNEL_ADDITIONAL_FLAGS := LD=ld.lld AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip
