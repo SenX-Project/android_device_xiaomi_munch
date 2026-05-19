@@ -1,3 +1,4 @@
+
 #
 # Copyright (C) 2021 The LineageOS Project
 #
@@ -18,6 +19,16 @@ TARGET_USES_DOLBY := true
 ifeq ($(TARGET_USES_DOLBY),true)
 $(call inherit-product, hardware/dolby/dolby.mk)
 endif
+
+# AxBurstEngine v2 configs
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/axburst/ax_perf_boosts.xml:$(TARGET_COPY_OUT_VENDOR)/etc/axburst/ax_perf_boosts.xml \
+    $(LOCAL_PATH)/configs/axburst/ax_perf_resources.xml:$(TARGET_COPY_OUT_VENDOR)/etc/axburst/ax_perf_resources.xml \
+    $(LOCAL_PATH)/configs/axburst/ax_perf_thermal.xml:$(TARGET_COPY_OUT_VENDOR)/etc/axburst/ax_perf_thermal.xml \
+    $(LOCAL_PATH)/configs/axburst/ax_perf_threads.xml:$(TARGET_COPY_OUT_VENDOR)/etc/axburst/ax_perf_threads.xml
+
+    
+TARGET_DISABLES_LIBPERF := true
 
 # Private key for signed build
 -include vendor/private-keys/keys/keys.mk

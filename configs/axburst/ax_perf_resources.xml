@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <resource id="0x0001" name="cpu_little_max_freq"     path="/sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq" />
+    <resource id="0x0002" name="cpu_little_min_freq"     path="/sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq" />
+    <resource id="0x0003" name="cpu_big_max_freq"        path="/sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq" />
+    <resource id="0x0004" name="cpu_big_min_freq"        path="/sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq" />
+    <resource id="0x0005" name="cpu_bigplus_max_freq"    path="/sys/devices/system/cpu/cpu7/cpufreq/scaling_max_freq" />
+    <resource id="0x0006" name="cpu_bigplus_min_freq"    path="/sys/devices/system/cpu/cpu7/cpufreq/scaling_min_freq" />
+    <resource id="0x0007" name="l3_little_min_freq"      path="/sys/class/devfreq/18590000.qcom,devfreq-l3:qcom,cpu0-cpu-l3-lat/min_freq" />
+    <resource id="0x0008" name="l3_big_min_freq"         path="/sys/class/devfreq/18590000.qcom,devfreq-l3:qcom,cpu4-cpu-l3-lat/min_freq" />
+    <resource id="0x0009" name="l3_bigplus_min_freq"     path="/sys/class/devfreq/18590000.qcom,devfreq-l3:qcom,cpu7-cpu-l3-lat/min_freq" />
+    <resource id="0x000a" name="llcc_bw_min_freq"        path="/sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/min_freq" />
+    <resource id="0x000b" name="gpu_max_pwrlevel"        path="/sys/class/kgsl/kgsl-3d0/max_pwrlevel" />
+    <resource id="0x000c" name="gpu_min_pwrlevel"        path="/sys/class/kgsl/kgsl-3d0/min_pwrlevel" />
+    <resource id="0x000d" name="gpu_force_rail_on"       path="/sys/class/kgsl/kgsl-3d0/force_rail_on" />
+    <resource id="0x000e" name="gpu_force_clk_on"        path="/sys/class/kgsl/kgsl-3d0/force_clk_on" />
+    <resource id="0x000f" name="gpu_idle_timer"          path="/sys/class/kgsl/kgsl-3d0/idle_timer" />
+    <resource id="0x0010" name="input_boost_freq"        path="/sys/module/cpu_boost/parameters/input_boost_freq" />
+    <resource id="0x0011" name="input_boost_ms"          path="/sys/module/cpu_boost/parameters/input_boost_ms" />
+    <resource id="0x0012" name="sched_boost"             path="/proc/sys/kernel/sched_boost" />
+    <resource id="0x0013" name="schedtune_boost_fg"      path="/dev/stune/foreground/schedtune.boost" />
+    <resource id="0x0014" name="schedtune_boost_topapp"  path="/dev/stune/top-app/schedtune.boost" />
+    <resource id="0x0015" name="schedtune_boost"         path="/dev/stune/schedtune.boost" />
+    <resource id="0x0016" name="thermal_sconfig"         path="/sys/class/thermal/thermal_message/sconfig" />
+    <resource id="0x0017" name="pmqos_cpu_dma_latency"   path="/dev/cpu_dma_latency"                              default="1000000" />
+    <resource id="0x0018" name="uclamp_fg_min"           path="/dev/cpuctl/foreground/cpu.uclamp.min"             default="0" />
+    <resource id="0x001b" name="uclamp_fg_lat"           path="/dev/cpuctl/foreground/cpu.uclamp.latency_sensitive" default="0" />
+    <resource id="0x0019" name="uclamp_top_lat"          path="/dev/cpuctl/top-app/cpu.uclamp.latency_sensitive"  default="0" />
+    <resource id="0x001a" name="uclamp_top_min"          path="/dev/cpuctl/top-app/cpu.uclamp.min"                default="0" />
+    <resource id="0x001c" name="cpuset_h_bg_cpus"        path="/dev/cpuset/h-background/cpus"                     default="0-3" />
+    <resource id="0x001d" name="cpuset_ax_fg_cpus"       path="/dev/cpuset/ax_foreground/cpus"                    default="0-7" />
+    <resource id="0x001e" name="cpuset_dex2oat_cpus"     path="/dev/cpuset/dex2oat/cpus"                          default="0-3" />
+    <resource id="0x001f" name="l3_little_max_freq"      path="/sys/class/devfreq/18590000.qcom,devfreq-l3:qcom,cpu0-cpu-l3-lat/max_freq" />
+    <resource id="0x0020" name="l3_big_max_freq"         path="/sys/class/devfreq/18590000.qcom,devfreq-l3:qcom,cpu4-cpu-l3-lat/max_freq" />
+    <resource id="0x0021" name="l3_bigplus_max_freq"     path="/sys/class/devfreq/18590000.qcom,devfreq-l3:qcom,cpu7-cpu-l3-lat/max_freq" />
+    <resource id="0x0022" name="llcc_bw_max_freq"        path="/sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/max_freq" />
+</resources>
