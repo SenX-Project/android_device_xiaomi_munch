@@ -88,29 +88,35 @@
         <set resource="uclamp_fg_lat"          id="0x001b" value="1" />
         <set resource="pmqos_cpu_dma_latency"  id="0x0017" value="200" />
     </boost>
-    <boost opcode="46" timeout_ms="300" name="notification_shade">
+    <boost opcode="46" timeout_ms="400" name="notification_shade">
         <set resource="cpu_big_max_freq"       id="0x0003" value="max" />
-        <set resource="gpu_max_pwrlevel"       id="0x000b" value="2" />
-        <set resource="uclamp_fg_min"          id="0x0018" value="30" />
+        <set resource="cpu_big_min_freq"       id="0x0004" value="1401600" />
+        <set resource="gpu_max_pwrlevel"       id="0x000b" value="1" />
+        <set resource="uclamp_fg_min"          id="0x0018" value="50" />
         <set resource="uclamp_fg_lat"          id="0x001b" value="1" />
+        <set resource="uclamp_top_min"         id="0x001a" value="50" />
+        <set resource="uclamp_top_lat"         id="0x0019" value="1" />
+        <set resource="pmqos_cpu_dma_latency"  id="0x0017" value="200" />
     </boost>
     <boost opcode="36" timeout_ms="500" name="early_wakeup">
         <set resource="latency_boost"          id="0x01fb" />
         <set resource="cpuset_res_boost"       id="0x01fd" />
         <set resource="llcc_bw_min_freq"       id="0x000a" value="1" />
     </boost>
-    <boost opcode="38" timeout_ms="400" name="animation">
+    <boost opcode="38" timeout_ms="500" name="animation">
         <set resource="cpu_big_max_freq"       id="0x0003" value="max" />
-        <set resource="gpu_max_pwrlevel"       id="0x000b" value="2" />
-        <set resource="uclamp_fg_min"          id="0x0018" value="40" />
-        <set resource="uclamp_top_min"         id="0x001a" value="40" />
+        <set resource="cpu_big_min_freq"       id="0x0004" value="1401600" />
+        <set resource="gpu_max_pwrlevel"       id="0x000b" value="1" />
+        <set resource="uclamp_fg_min"          id="0x0018" value="50" />
+        <set resource="uclamp_top_min"         id="0x001a" value="50" />
         <set resource="uclamp_top_lat"         id="0x0019" value="1" />
         <set resource="pmqos_cpu_dma_latency"  id="0x0017" value="200" />
     </boost>
-    <boost opcode="63" timeout_ms="150" name="render_thread">
+    <boost opcode="63" timeout_ms="200" name="render_thread">
         <set resource="cpu_big_max_freq"       id="0x0003" value="max" />
-        <set resource="gpu_max_pwrlevel"       id="0x000b" value="2" />
-        <set resource="uclamp_fg_min"          id="0x0018" value="50" />
+        <set resource="cpu_big_min_freq"       id="0x0004" value="1401600" />
+        <set resource="gpu_max_pwrlevel"       id="0x000b" value="1" />
+        <set resource="uclamp_fg_min"          id="0x0018" value="60" />
         <set resource="uclamp_fg_lat"          id="0x001b" value="1" />
         <set resource="l3_big_min_freq"        id="0x0008" value="1" />
         <set resource="l3_bigplus_min_freq"    id="0x0009" value="1" />
