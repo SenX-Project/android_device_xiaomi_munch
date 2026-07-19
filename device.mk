@@ -142,6 +142,9 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
+# Axion common
+$(call inherit-product, device/axion/common/config/soc_map.mk)
+
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
