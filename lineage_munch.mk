@@ -14,14 +14,31 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from munch device
 $(call inherit-product, device/xiaomi/munch/device.mk)
 
-# Enable UI enhancements
+# EPPE
+TARGET_DISABLE_EPPE := true
+
+# BLUR
 TARGET_ENABLE_BLUR := true
 
-# Enable features
-TARGET_SUPPORTS_QUICK_TAP := true
+# AXION STUFFS
+AXION_CAMERA_REAR_INFO := 64,8,2
+AXION_CAMERA_FRONT_INFO := 20
+AXION_MAINTAINER := SENX|センクス
+AXION_PROCESSOR := Snapdragon®_870_5G
+PERF_ANIM_OVERRIDE := false
+TARGET_SUPPORTED_REFRESH_RATES := 60,120
+PERF_GOV_SUPPORTED := true
+PERF_DEFAULT_GOV := schedutil
+TORCH_STR_SUPPORTED := true
 BYPASS_CHARGE_SUPPORTED := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
-USE_PIXEL_CHARGING := true
+TARGET_INCLUDE_AXFX := true
+TARGET_TOUCH_BOOST_SUPPORTED := true
+TARGET_INCLUDES_LOS_PREBUILTS := true
+TARGET_DOZE_TAP_PULSE_SUPPORTED := true
+TARGET_DOZE_DOUBLE_TAP_PULSE_SUPPORTED := true
+TARGET_DOZE_PICKUP_PULSE_SUPPORTED := true
+TARGET_DOZE_SIDE_FPS_PULSE_SUPPORTED := true
+TARGET_NEEDS_VULKAN_MEDIA_FIX := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_munch
